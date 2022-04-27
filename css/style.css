@@ -105,7 +105,7 @@ body{
 }
 
 .card__psw{
-    width: 50%;
+    min-width: 50%;
     padding: var(--gutter-xs);
 }
 
