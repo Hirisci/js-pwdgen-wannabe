@@ -8,6 +8,6 @@ const color= prompt("Inserisci il tuo colore preferito");
 const psw= `${names}${surname}${color}21`;
 console.log(psw)
 
-document.getElementById("name").innerHTML= names;
-document.getElementById("surname").innerHTML= surname;
+document.getElementById("name").innerHTML+= names;
+document.getElementById("surname").innerHTML+= surname;
 document.getElementById("psw").innerHTML= psw;
