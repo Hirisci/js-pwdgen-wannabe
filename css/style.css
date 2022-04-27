@@ -5,12 +5,30 @@
  :root{
     /*- COLORI PRIMARIO -*/
     --clr-primary-0: black;
-
+    --clr-primary-1: hsl(210, 11, 15);
+    --clr-primary-2: hsl(210, 10, 23);
+    --clr-primary-3: hsl(210, 9, 31);
+    --clr-primary-4: hsl(210, 7, 46);
+    --clr-primary-5: hsl(210, 11, 71);
+    --clr-primary-6: hsl(210, 14, 83);
+    --clr-primary-7: hsl(210, 14, 89);
+    --clr-primary-8: hsl(210, 16, 93);
+    --clr-primary-9: hsl(210, 17, 98);
+    
+    
     /*- COLORI SECONDARIO -*/
-    --clr-secondary-0: white;
+    --clr-secondary-0: #03045E;
+    --clr-secondary-1: #023E8A;
+    --clr-secondary-2: #0077B6;
+    --clr-secondary-3: #0096C7;
+    --clr-secondary-4: #00B4D8;
+    --clr-secondary-5: #48CAE4;
+    --clr-secondary-6: #90E0EF;
+    --clr-secondary-7: #ADE8F4;
+    --clr-secondary-8: #CAF0F8;
 
     /*- DIMENSIONI GUTTER*/
-    --gutter-xs: .25rem
+    --gutter-xs: .25rem;
     --gutter-sm: .5rem;
     --gutter-md: 1rem;
     --gutter-lg: 1.5rem;
@@ -42,12 +60,55 @@
        COMMON
   ╚═══════════════╝*/
 body{
-    font-family: 'rotobo' sans-serif;
-    color: var(--colore-testo);
+    font-family: 'rotobo', sans-serif;
+    background-color: var(--clr-secondary-8);
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
 
 /*╔═══════════════╗
     TAG SEMANTICI
   ╚═══════════════╝*/
-/*  */
+/* --- CARD --- */
+
+
+.card{
+    background-color: white;
+    width: 350px;
+    border-radius: 1rem;
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+
+.card__info > * + *{
+    margin-top: var(--gutter-md);
+    border: 1px solid black;
+}
+
+.card__img{
+    height: 100px;
+    overflow: hidden;
+}
+
+.card__img img{  
+    width: 100%;
+}
+
+.card__info{
+    padding: var(--gutter-md);
+    text-align: center;
+}
+
+.person{
+    display: flex;
+    padding: var(--gutter-sm);
+    justify-content: center;
+    gap: 20px;
+    text-transform: capitalize;
+}
+
+
+
+
