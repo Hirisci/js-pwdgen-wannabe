@@ -82,6 +82,7 @@ body{
 .card__img{
     height: 100px;
     overflow: hidden;
+    border-bottom: 2px solid black;
 }
 
 .card__img img{  
